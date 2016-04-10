@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>俱乐部信息管理</title>
+  
+    <style>
+       table{border:1px solid red;}
+       td,th{text-align:center;border-bottom:1px solid red;border-right:1px solid red;height:30px;}
+    </style>
+</head>
+<body>
+<div id="wrap">
+ <!---右边开始-->
+     <div class="bread">
+        <i></i>
+        <span class="font_blue">俱乐部信息管理</span>
+        <span>></span>
+        <span>出票网点管理</span>
+     </div>
+     <div class="right_con ">
+     <!---查询内容开始-->
+     <div class="query_warp clearfix">
+         <div class="query_left">
+             <span>
+                 <label for="">id查询:</label>
+                 <input type="text" id="mid" class="input_115">
+             </span>
+             <span>
+                 <label for="date">姓名查询:</label>
+                 <input type="text" class="input_115" id="mname" value="">
+             </span>
+			 
+         </div>
+         <div class="query_right">
+             <button id="search">开始查询</button>
+           
+         </div>
+     </div>
+     <!---查询内容结束-->
+     <div class="query_tab">
+         <table  width="100%">
+             <thead>
+				<tr>
+					
+					 <th width="">姓名</th>
+					 <th width="">手机号</th>
+					 <th width="">绑定状态</th>
+					 <th width="">绑定时间</th>
+					
+				 </tr>
+             </thead>
+             <tbody id="data-content">
+			 
+             </tbody>
+         </table>
+     </div>
+     <div class="pages_warp">
+		<span id="first_page">首页</span>
+		<span id="prev_page">&lt;</span>
+         <ul id="pageArea"></ul>
+		 <span id="next_page">&gt;</span>
+		 <span id="last_page">尾页</span>
+         <span>
+             共<em id="all_count"></em>页，到第<input type="text" class="input_50" id="go_page" />页 <button id="go_submit">确定</button>
+         </span>
+    </div>
+</div>
+</div>
+ <!---右边结束--> 
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="tpm.js"></script>
+
+
+
+
+</body>
+</html>
+
